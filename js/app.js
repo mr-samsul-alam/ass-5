@@ -15,9 +15,9 @@ const extraStoragePrice = document.getElementById('extraStoragePrice');
 const  deliveryPrice = document.getElementById('deliveryPrice');
 const totalPrice = document.getElementById('totalPrice');
 
- //All button are Working here
+ //--------------------  All button are Working here
 
- //Extra memeoray 
+ //-----Extra memory  price Cost
 memoryButtonOne.addEventListener('click',function(){
     extraMemorysPrice(0)
     total ()
@@ -26,7 +26,7 @@ memoryButtonTwo.addEventListener('click',function(){
     extraMemorysPrice(180)
     total ()
 })
-
+//-----Extra Storege price cost
 storageButtonOne.addEventListener('click',function(){
     extraStoragesPrice(0);
     total ()
@@ -39,7 +39,7 @@ storageButtonThree.addEventListener('click',function(){
     extraStoragesPrice(180);   
     total ()
 })
-
+//-------Extra delivery Cost
 deliveryButtonOne.addEventListener('click',function(){
 
     deliverysPriceExtra (0);
@@ -51,7 +51,8 @@ deliveryButtonTwo.addEventListener('click',function(){
   
 })
 
-//Extra cost Fot Extra Memory 
+//--------------------------- Extra cost's function 
+
 function extraMemorysPrice(extra){
     extraMemoryPrice.innerText = Number(extra);
 }
@@ -67,7 +68,7 @@ function deliverysPriceExtra (extra){
 }
 
 
-//functional sum are done here
+//----- functional Sum are done here
 
 function total () {
     const bestPriceUpdated = Number(bestPrice.innerText);
@@ -80,11 +81,12 @@ function total () {
     
 
 }
+//-------------------------------------------  Discount part
 
 const discountTotal = document.getElementById('discountTotal');
 
-///discount part
 const applyButton = document.getElementById('applyButton');
+//---------------discount part's function
 applyButton.addEventListener('click',function(){
      const applyInput = document.getElementById('applyInput')
      const applyInputText = applyInput.value;
