@@ -95,6 +95,8 @@ applyButton.addEventListener('click',function(){
         const totalPriceUpdated = totalPrice.innerText ;
         const discountPrice = totalPriceUpdated - totalPriceUpdated * 0.2;
         discountTotal.innerText = discountPrice;
+        const successMessage = document.getElementById("success-message")
+        successMessage.style.display = "block"
     }
     else{
         const errorMessage = document.getElementById("error-message")
