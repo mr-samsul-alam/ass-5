@@ -42,11 +42,11 @@ storageButtonThree.addEventListener('click',function(){
 
 deliveryButtonOne.addEventListener('click',function(){
 
- deliveryPriceExtra (0);
+    deliverysPriceExtra (0);
     total ()
 })
 deliveryButtonTwo.addEventListener('click',function(){
-    deliveryPriceExtra (20);
+    deliverysPriceExtra (20);
     total ()
   
 })
