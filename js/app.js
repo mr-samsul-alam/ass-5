@@ -1,3 +1,5 @@
+
+//All button are Called Here
 const memoryButtonOne = document.getElementById('memoryOne');
 const memoryButtonTwo = document.getElementById('memoryTwo');
 const storageButtonOne = document.getElementById('storageOne');
@@ -65,10 +67,16 @@ applyButton.addEventListener('click',function(){
      const applyInput = document.getElementById('applyInput')
      const applyInputText = applyInput.value;
       total();
-    if(applyInputText == 'steveKaku'){
+    if(applyInputText == 'stevekaku'){
         const totalPriceUpdated = totalPrice.innerText ;
         const discountPrice = totalPriceUpdated - totalPriceUpdated * 0.2;
         discountTotal.innerText = discountPrice;
+    }
+    else{
+        const errorMessage = document.getElementById("error-message")
+        errorMessage.style.display = "block"
+        const totalPriceUpdated = totalPrice.innerText ;
+        discountTotal.innerText = totalPriceUpdated;
     }
   
 })
